@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+
+
+<body>
+    <div id=menu>
+        <h2>推荐使用F11全屏模式进行游戏</h2>
+        <h2>第<span id="rank">1</span>关</h2>
+        <div style="text-align: center">
+            <input type="text" id="timetext" value="00时00分00秒" readonly><br>
+            <button type="button" onclick="start()">开始</button> <button type="button" onclick="stop()">暂停</button> <button type="button" onclick="Reset()">重置</button>
+        </div>
+        <h2>已移动步数 <span id="step">0</span></h2>
+        <div id="endTip">
+            恭喜您通关！共计<span id="totalStep">0</span>步,您的详细成绩如下：
+            <ul id="detailStep">
+                <li class="eachStep"></li>
+                <li class="eachStep"></li>
+                <li class="eachStep"></li>
+                <li class="eachStep"></li>
+                <li class="eachStep"></li>
+                <li class="eachStep"></li>
+                <li class="eachStep"></li>
+                <li class="eachStep"></li>
+                <li class="eachStep"></li>
+                <li class="eachStep"></li>
+            </ul>
+        </div>
+        <div class="hint hide">
+            拼图成功！点击按钮进入
+            <button id="myBtn">下一关</button>
+        </div>
+        
+    </div>
+
+<canvas id="canvas" width="640px" height="360px">
+    cannot support canvas
+</canvas>
+
+<ul id="game">
+    <li><img src="" alt="" draggable="true" id="0"></li>
+    <li><img src="" alt="" draggable="true" id="1"></li>
+    <li><img src="" alt="" draggable="true" id="2"></li>
+    <li><img src="" alt="" draggable="true" id="3"></li>
+    <li><img src="" alt="" draggable="true" id="4"></li>
+    <li><img src="" alt="" draggable="true" id="5"></li>
+    <li><img src="" alt="" draggable="true" id="6"></li>
+    <li><img src="" alt="" draggable="true" id="7"></li>
+    <li><img src="" alt="" draggable="true" id="8"></li>
+<ul/>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

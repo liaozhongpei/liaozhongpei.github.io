@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#myBtn {
+    height: 30px;
+    width: 60px;
+}
+
+#canvas {
+    /* border: 1px solid black; */
+    display: none;
+}
+
+#game {
+    max-width: 1920px;
+    /* max-height: 1080px;  */
+    /* margin: 0 auto; */
+    margin-top: 50px;
+}
+
+#game img {
+    width: 99.3%;
+    /* display: grid; */
+}
+
+#game > li {
+    width: 33%;
+    /* height: 360px; */
+    float: left;
+    list-style: none;
+}
+
+#endTip{
+    display: none;
+}
+
+
+
+/* 提示信息*/
+.hint {
+    margin-top: 30px;
+    margin-left: 45%;
+    font-size: 20px;
+}
+
+.hide{
+    display: none;
+}
